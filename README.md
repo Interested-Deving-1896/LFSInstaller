@@ -367,29 +367,29 @@ It is recommended to execute this script as a root user.
 Modes: 
   -c, --create									Generates LFS installation script
   -i, --install									Starts LFS Installation script
-  -it, --install-type								Specifies installation type
-  --create-partition								Specifies new device blocks of partition
-  -m, --mount									Mounts LFS to a target partition
+  -it, --install-type						Specifies installation type
+  --create-partition						Specifies new device blocks of partition
+  -m, --mount									  Mounts LFS to a target partition
   -um, --unmount								Unmounts LFS from a target partition
-  --chroot									Enters chroot environment on an isolated machine
+  --chroot									    Enters chroot environment on an isolated machine
 
 Options:
   -v, --version									Specifies LFS Release Build Version
   -p, --partition								Specifies partition
-  -sp, --swap-partition								Specifies SWAP partition
-  -vc, --version-codename							Specifies version codename
-  -dc, --distrib-codename							Specifies distrib codename
+  -sp, --swap-partition					Specifies SWAP partition
+  -vc, --version-codename				Specifies version codename
+  -dc, --distrib-codename				Specifies distrib codename
  
 Others:
-  -h, --help									Show help message
-  -u, --usage									Show usage information
+  -h, --help									  Show help message
+  -u, --usage									  Show usage information
   --version-list								Show list of LFS Release Builds
  
 Examples:
-  ./LFSInstaller -m								Initializes mounting procedure
-  ./LFSInstaller -c								Creates standard installation script in interactive mode (if no values have passed)
+  ./LFSInstaller -m								                                        Initializes mounting procedure
+  ./LFSInstaller -c								                                        Creates standard installation script in interactive mode (if no values have passed)
   ./LFSInstaller --partition=/dev/sda1 --install-type=phase -c		        Creates installation script, on the '/dev/sda1' partition, which will create shell script as phases.
-  ./LFSInstaller --version=9.0 -c						Creates installation script that uses the release build version '9.0'
+  ./LFSInstaller --version=9.0 -c						                              Creates installation script that uses the release build version '9.0'
 ```
 
 ## Usage
